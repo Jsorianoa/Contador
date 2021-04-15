@@ -1,13 +1,121 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: "Orbitron", sans-serif;
+  background-color: #000000;
+}
+.container-principal .description {
+  width: 100%;
+  padding: 10rem 5rem 8rem 5rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+}
+
+@media(max-width:768px){
+    .container-principal .description {
+        padding: 1rem .5rem;
+        font-size: 1rem;
+      } 
+}
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  color: #dfdfdf;
+  width: 30%;
+  height: 25rem;
+  background: #52057b;
+  margin: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.card:hover {
+  box-shadow: 0px 0px 5px 5px #52057b;
+}
+@media(max-width:768px){
+    .card{
+        width: 45%;
+        margin: 1.5rem .3rem;
+        height: 30rem;
+    }
+}
+.container {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card p {
+  font-size: 3rem;
+}
+
+.card h1 {
+  font-size: 2rem;
+}
+@media(max-width:768px){   
+      .card h1 {
+          font-size: 2rem;
+      } 
+      .card h2{
+          font-size: 1.5rem;
+          text-align: center;
+      }
+      .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+      }
+}
+.card .container button {
+  padding: 1rem 1.5rem;
+  color: #dfdfdf;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .5s;
+  display: flex;
+  justify-content: center;
+  margin-bottom: .8rem;
+}
+
+.card .container button:nth-child(1) {
+  border: 3px solid #2f998d;
+  
+}
+.card .container button:nth-child(1):hover{
+    background-color: #335d2d;
+}
+.card .container button:nth-child(2) {
+  border: 3px solid #e24848;
+}
+.card .container button:nth-child(2):hover{
+    background-color: #7d0633;
+}
+.card .container button:nth-child(3) {
+  border: 3px solid #11a9d8;
+}
+.card .container button:nth-child(3):hover{
+    background-color: #133b5c;
+}
+
+@media(max-width:768px){
+    .container {
+        width: 90%;     
+      }
 }
